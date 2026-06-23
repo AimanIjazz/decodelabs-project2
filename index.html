@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DecodeLabs | Responsive Web Layout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">DecodeLabs</div>
+
+    <button popovertarget="mobile-menu" class="js-menu-toggle" aria-label="Toggle navigation menu">
+      ☰
+    </button>
+
+    <nav class="nav-desktop">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="mobile-menu" popover class="mobile-menu">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <section class="hero" id="home">
+      <h1>Responsive by Design, Fluid by Nature</h1>
+      <p>This layout adapts gracefully from mobile to desktop using a mobile-first approach.</p>
+    </section>
+
+    <section class="layout-grid" id="features">
+      <div class="grid-header">HEADER</div>
+      <aside class="grid-sidebar">SIDEBAR</aside>
+      <div class="grid-main">
+        <h2>Main Content Block</h2>
+        <p>
+          This area uses CSS Grid for macro page structure. Resize the
+          browser window to see breakpoints adjust spacing and stacking.
+        </p>
+      </div>
+      <div class="grid-footer">FOOTER</div>
+    </section>
+
+    <section class="cards" id="gallery">
+      <h2>Flexible Card Gallery</h2>
+      <div class="card-flex">
+        <div class="card">Card A</div>
+        <div class="card">Card B</div>
+        <div class="card">Card C</div>
+        <div class="card">Card D</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <p>&copy; 2026 DecodeLabs — Responsive Web Layout Project</p>
+  </footer>
+
+</body>
+</html>
